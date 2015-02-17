@@ -72,7 +72,7 @@ func main() {
 
 	http.HandleFunc("/files", getFilesRouteHandler(dirname))
 
-	log.Println("Hello World! We will be serving out of %s today.", port)
+	log.Printf("Hello World! We will be serving out of %s today.", port)
 
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
